@@ -45,14 +45,14 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.12.0
 echo "install postman"
 wget https://dl.pstmn.io/download/latest/linux_64 -P ~/Downloads
 sudo tar -xvf ~/Downloads/linux_64 -C /opt/
-cp ~/dotfiles/applications/Postman.desktop ~/.local/share/applications/
+cp ~/.dotfiles/applications/Postman.desktop ~/.local/share/applications/
 
 echo "install neovim (latest)"
 sudo apt-get install ninja-build gettext cmake unzip curl
 git clone https://github.com/neovim/neovim ~/Downloads/
 cd ~/Downloads/neovim && make CMAKE_BUILD_TYPE=Release
 sudo make install
-cp -r ~/dotfiles/.config/nvim ~/.config/nvim/
+cp -r ~/.dotfiles/.config/nvim ~/.config/nvim/
 
 echo "install packer.nvim"
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
@@ -71,7 +71,7 @@ ibus restart
 env DCONF_PROFILE=ibus dconf write /desktop/ibus/general/preload-engines "['BambooUs', 'Bamboo']" && gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 
 echo "install fonts"
-cp -r ~/dotfiles/.fonts ~/.fonts
+cp -r ~/.dotfiles/.fonts ~/.fonts
 fc-cache -f -v
 
 echo "install zsh"
@@ -79,14 +79,14 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-cp ~/dotfiles/.config/zsh/.zshrc ~/.zshrc
+cp ~/.dotfiles/.config/zsh/.zshrc ~/.zshrc
 
 echo "config terminal"
 mkdir ~/.config/alacritty 
-cp ~/dotfiles/.config/alacritty/alacritty.yml ~/.config/alacritty/ 
+cp ~/.dotfiles/.config/alacritty/alacritty.yml ~/.config/alacritty/ 
 
 echo "config tmux" 
-cp ~/dotfiles/.config/tmux/.tmux.conf ~/.tmux.conf
+cp ~/.dotfiles/.config/tmux/.tmux.conf ~/.tmux.conf
 
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
