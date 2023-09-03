@@ -1,0 +1,68 @@
+window:
+  title: "Alacritty"
+  opacity: 1
+
+# Font
+font:
+  normal:
+    family: JetbrainsMono Nerd Font
+    style: Regular
+
+  bold:
+    family: JetbrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetbrainsMono Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: JetbrainsMono Nerd Font
+    style: Bold Italic
+
+  size: 12.5
+
+  offset:
+    x: 0
+    y: 0
+
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#ffffff"
+
+  cursor:
+    text: "#000000"
+    cursor: "#ffffff"
+
+  normal:
+    black: "#2e3436"
+    red: "#cc0000"
+    green: "#4e9a06"
+    yellow: "#c4a000"
+    blue: "#3465a4"
+    magenta: "#75507b"
+    cyan: "#06989a"
+    white: "#d3d7cf"
+
+  bright:
+    black: "#555753"
+    red: "#ef2929"
+    green: "#8ae234"
+    yellow: "#fce94f"
+    blue: "#729fcf"
+    magenta: "#ad7fa8"
+    cyan: "#34e2e2"
+    white: "#eeeeec"
+
+cursor:
+  style:
+    shape: Block
+
+mouse:
+  hide_when_typing: true
+
+selection:
+  save_to_clipboard: true
+shell:
+  program: /usr/bin/zsh
