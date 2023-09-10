@@ -29,7 +29,7 @@ font:
 colors:
   primary:
     background: "#000000"
-    foreground: "#ffffff"
+    foreground: "#00ff00"
 
   cursor:
     text: "#000000"
