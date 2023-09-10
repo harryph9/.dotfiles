@@ -91,6 +91,8 @@ return require("packer").startup(function(use)
 	use("windwp/nvim-ts-autotag")
 	use("nvim-lualine/lualine.nvim")
 
+	use("lukas-reineke/indent-blankline.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
