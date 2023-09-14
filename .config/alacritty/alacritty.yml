@@ -20,7 +20,7 @@ font:
     family: JetbrainsMono Nerd Font
     style: Bold Italic
 
-  size: 12
+  size: 11.5
 
   offset:
     x: 0
@@ -29,11 +29,11 @@ font:
 colors:
   primary:
     background: "#000000"
-    foreground: "#00ff00"
+    foreground: "#ffffff"
 
   cursor:
     text: "#000000"
-    cursor: "#4e9a06"
+    cursor: "#ad7fa8"
 
   normal:
     black: "#2e3436"
