@@ -1,0 +1,25 @@
+snippet main
+	package ${1}
+
+	import (
+		"fmt"
+	)
+
+	func main() {
+		${2}
+	}
+
+snippet cp
+	package ${1}
+
+	import (
+		"bufio"
+		"os"
+	)
+
+	func main() {
+		reader := bufio.NewReader(os.Stdin)
+		writer := bufio.NewWriter(os.Stdout)
+		${2}
+		writer.Flush()
+	}

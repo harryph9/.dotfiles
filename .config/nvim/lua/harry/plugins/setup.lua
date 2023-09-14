@@ -88,7 +88,6 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	use("windwp/nvim-ts-autotag")
 	use("nvim-lualine/lualine.nvim")
 
 	use("lukas-reineke/indent-blankline.nvim")
